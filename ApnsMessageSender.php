@@ -1,6 +1,6 @@
 <?php
 // https://github.com/immobiliare/ApnsPHP
-require_once dirname(__FILE__).'/ApnsPHP/ApnsPHP/Autoload.php';
+require_once dirname(__FILE__).'/ApnsPHP_SJIS/ApnsPHP/Autoload.php';
 
 class ApnsMessageSender
 {
@@ -23,7 +23,7 @@ class ApnsMessageSender
     }
 
     /**
-     * @param array $tokens ãƒ‡ãƒã‚¤ã‚¹ãƒˆãƒ¼ã‚¯ãƒ³, æ–‡å­—åˆ—ã®é…åˆ—
+     * @param array $tokens ƒfƒoƒCƒXƒg[ƒNƒ“, •¶Žš—ñ‚Ì”z—ñ
      * @return $this
      */
     public function setDeviceTokens(array $tokens)
@@ -38,7 +38,7 @@ class ApnsMessageSender
      */
     public function setMessage($message)
     {
-        $this->pushMessage = $message;
+        $this->pushMessage = mb_convert_encoding($message, "UTF-8", 'SJIS');;
         return $this;
     }
 
