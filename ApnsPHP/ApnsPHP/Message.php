@@ -396,7 +396,11 @@ class ApnsPHP_Message
 	 */
 	public function getPayload()
 	{
-		$sJSON = json_encode($this->_getPayload(), defined('JSON_UNESCAPED_UNICODE') ? JSON_UNESCAPED_UNICODE : 0);
+		if (version_compare(phpversion(), "5.3.0", "<")) {
+			$sJSON = json_encode($this->_getPayload());
+		} else {
+			$sJSON = json_encode($this->_getPayload(), defined('JSON_UNESCAPED_UNICODE') ? JSON_UNESCAPED_UNICODE : 0);
+		}
 		if (!defined('JSON_UNESCAPED_UNICODE') && function_exists('mb_convert_encoding')) {
 			$sJSON = preg_replace_callback(
 				'~\\\\u([0-9a-f]{4})~i',
