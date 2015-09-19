@@ -9,16 +9,16 @@ try {
         dirname(__FILE__)."/server_certificates_sandbox.pem",
         dirname(__FILE__)."/entrust_root_certification_authority.pem"
     );
-    // 指定の全端末に同じメッセージをpush
+    // �w��̑S�[���ɓ������b�Z�[�W��push
     $sender
-        ->setMessage(sprintf("message date:%s", date("Y-m-d H:i:s")))
+        ->setMessage(sprintf("���{��:message date:%s", date("Y-m-d H:i:s")))
         ->setDeviceTokens(
             array(
-                "<デバイストークン>",
+                "device token",
             )
         )
         ->send();
 } catch (Exception $e) {
-    // なんらかの例外処理
+    // �Ȃ�炩�̗�O����
     echo $e->getMessage();
 }
