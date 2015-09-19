@@ -29,7 +29,7 @@
  * updates with a per-application list of devices for which there were failed-delivery
  * attempts. Providers should periodically query the feedback service to get the
  * list of device tokens for their applications, each of which is identified by
- * its topic. Then, after verifying that the application hasn‚Äôt recently been re-registered
+ * its topic. Then, after verifying that the application hasnÅft recently been re-registered
  * on the identified devices, a provider should stop sending notifications to these
  * devices.
  *
@@ -56,7 +56,7 @@ class ApnsPHP_Feedback extends ApnsPHP_Abstract
 	 *     no longer exists on the device. This value represents the seconds since
 	 *     1970, anchored to UTC. You should use the timestamp to determine if the
 	 *     application on the device re-registered with your service since the moment
-	 *     the device token was recorded on the feedback service. If it hasn‚Äôt,
+	 *     the device token was recorded on the feedback service. If it hasnÅft,
 	 *     you should cease sending push notifications to the device.
 	 * @li @c tokenLength The length of the device token (usually 32 bytes).
 	 * @li @c deviceToken The device token.

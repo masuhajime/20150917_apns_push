@@ -39,7 +39,7 @@ class ApnsPHP_Message_Custom extends ApnsPHP_Message
 	 *
 	 * If a string is specified, displays an alert with two buttons.
 	 * iOS uses the string as a key to get a localized string in the current localization
-	 * to use for the right button‚Äôs title instead of "View". If the value is an
+	 * to use for the right buttonÅfs title instead of "View". If the value is an
 	 * empty string, the system displays an alert with a single OK button that simply
 	 * dismisses the alert when tapped.
 	 *
@@ -63,7 +63,7 @@ class ApnsPHP_Message_Custom extends ApnsPHP_Message
 
 	/**
 	 * Set the alert-message string in Localizable.strings file for the current
-	 * localization (which is set by the user‚Äôs language preference).
+	 * localization (which is set by the userÅfs language preference).
 	 *
 	 * The key string can be formatted with %@ and %n$@ specifiers to take the variables
 	 * specified in loc-args.
@@ -114,7 +114,7 @@ class ApnsPHP_Message_Custom extends ApnsPHP_Message
 	 * The image is used as the launch image when users tap the action button or
 	 * move the action slider. If this property is not specified, the system either
 	 * uses the previous snapshot, uses the image identified by the UILaunchImageFile
-	 * key in the application‚Äôs Info.plist file, or falls back to Default.png.
+	 * key in the applicationÅfs Info.plist file, or falls back to Default.png.
 	 * This property was added in iOS 4.0.
 	 *
 	 * @param  $sLaunchImage @type string The filename of an image file.
