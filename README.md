@@ -34,6 +34,3 @@ https://github.com/masuhajime/20150917_apns_push/blob/master/ApnsMessageSender.p
 - http://liginc.co.jp/programmer/archives/2355
 - https://github.com/immobiliare/ApnsPHP
 
-
-
-https://github.com/masuhajime/20150917_apns_push/commit/27dea0b2e6382da9e503a9907e1f1a1dea67beba
