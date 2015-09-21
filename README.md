@@ -14,8 +14,8 @@ https://github.com/masuhajime/20150917_apns_push/blob/master/ApnsMessageSender.p
 ### Apnsにpushする際の問題
 
 
-1.1つのメッセージで `256` バイトを超えてはいけない
-1.1回の通信で全パケットが` 5000〜7000` バイトを超えるとAPNSから切断される
+1. 1つのメッセージで `256` バイトを超えてはいけない
+1. 1回の通信で全パケットが` 5000〜7000` バイトを超えるとAPNSから切断される
 
 
 - 上記2つの問題に対しての対策
@@ -31,6 +31,8 @@ https://github.com/masuhajime/20150917_apns_push/blob/master/ApnsMessageSender.p
 - `entrust_root_certification_authority.pem` と `server_certificates_sandbox.pem` を  
 作成するために参考にした記事
  - https://akira-watson.com/iphone/push-notification_1.html
-- http://liginc.co.jp/programmer/archives/2355
-- https://github.com/immobiliare/ApnsPHP
+- `stream_socket_client` で Apns に送信するサンプルコード
+ - http://liginc.co.jp/programmer/archives/2355
+- ApnsPHP
+ - https://github.com/immobiliare/ApnsPHP
 
