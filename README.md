@@ -30,6 +30,7 @@ https://github.com/masuhajime/20150917_apns_push/blob/master/ApnsMessageSender.p
 
 - `entrust_root_certification_authority.pem` と `server_certificates_sandbox.pem` を  
 作成するために参考にした記事
+ - http://blog.kmusiclife.com/p/xcode-push-cer/
  - https://akira-watson.com/iphone/push-notification_1.html
 - `stream_socket_client` で Apns に送信するサンプルコード
  - http://liginc.co.jp/programmer/archives/2355
